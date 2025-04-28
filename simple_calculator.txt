@@ -1,0 +1,34 @@
+public class SimpleCalculator {
+    public static Integer add(Integer num1 , Integer num2){
+        return num1 + num2;
+    }
+    public static Integer subtract(Integer num1 , Integer num2){
+        return num1 - num2;
+    }
+    public static Integer multiply(Integer num1 , Integer num2){
+        return num1 * num2;
+    }
+    public static Decimal divide(Integer num1,Integer num2){
+        if(num2!=0){
+            return num1 / num2;
+        }
+        else{
+            System.debug('Error: Division by Zero.');
+            return null;
+        }
+    }
+}
+
+
+
+//on the execute
+Integer operand1=10;
+Integer operand2=5;
+Integer sum=SimpleCalculator.add(operand1,operand2);
+Integer difference=SimpleCalculator.subtract(operand1,operand2);
+Integer product=SimpleCalculator.multiply(operand1,operand2);
+Decimal quotient=SimpleCalculator.divide(operand1,operand2);
+System.debug('Sum:' + sum);
+System.debug('Difference:' + difference);
+System.debug('Product:' + product);
+System.debug('Quotient' + quotient);
