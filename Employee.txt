@@ -1,0 +1,44 @@
+public class EmployeeInfoApp {
+    public class Employee {
+        String name;
+        Integer age;
+        String dept;
+
+        Employee(String n, Integer a, String d) {
+            name = n;
+            age = a;
+            dept = d;
+        }
+
+        void show() {
+            System.debug(name + ' | ' + age + ' | ' + dept);
+        }
+    }
+
+    public static void showEmployees() {
+        new Employee('Nupur', 22, 'Engineering').show();
+        new Employee('Amit', 28, 'Sales').show();
+        new Employee('Sneha', 25, 'HR').show();
+    }
+}
+
+
+
+//execute
+
+EmployeeInfoApp.showEmployees();
+
+
+
+
+
+
+
+
+//Dynamic via object creation
+Employee_c e = new Employee_c();
+e.Name = 'Ravi';
+e.Employee_ID__c = 501;
+e.Department__c = 'IT';
+e.Salary__c = 50000;
+insert e;
