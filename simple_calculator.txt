@@ -32,3 +32,24 @@ System.debug('Sum:' + sum);
 System.debug('Difference:' + difference);
 System.debug('Product:' + product);
 System.debug('Quotient' + quotient);
+
+
+
+
+student
+Student_c s = new Student_c();
+s.Name = 'Nupur';
+s.Roll_Number__c = 101;
+s.Age__c = 20;
+s.Class__c = 'Computer Engg';
+insert s
+
+
+
+employee
+Employee_c e = new Employee_c();
+e.Name = 'Ravi';
+e.Employee_ID__c = 501;
+e.Department__c = 'IT';
+e.Salary__c = 50000;
+insert e;
